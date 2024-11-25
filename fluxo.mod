@@ -35,12 +35,18 @@ printf{(i, j) in E} "E(%g, %g) = %g\n", i, j, x[i, j];
 
 data;
 
-param n := 4; # Nûmero de nós
+param n := 6; # Nûmero de nós
+
+param O := 1; # Nó inicial
+param T := 6; # Nó final
 
 param : E : fluxo_max := # Formato para definir fluxo maximo em uma aresta: index_i index_j valor_do_fluxo
-        1 2 10
-        1 3 20
-        3 2 5
-        3 4 10
-        2 4 15;
+        1 2 50
+        1 3 60
+        2 4 40
+        2 5 60
+        3 4 80
+        3 5 60
+        4 6 50
+        5 6 70;
 end;
